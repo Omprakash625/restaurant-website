@@ -1,3 +1,8 @@
+:root {
+	--color-primary: #f1a81c;
+	--color-secondary: #011839;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -66,9 +71,28 @@ footer {
 	padding: 0 3px 0 0;
 	height: 50px;
 }
-.btn {
-	border-radius: 50%;
+.button {
+	display: flexbox;
+	text-decoration: none;
+	background-color: var(--color-primary);
+	border: 0;
 }
+/* .input-search {
+	display: inline-block;
+	width: 90% !important;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+}
+.search {
+	display: flex;
+	align-items: center;
+	justify-content: top;
+	flex-shrink: 1;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+} */
 .search-icon {
 	height: 40px;
 }

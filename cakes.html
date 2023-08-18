@@ -10,48 +10,71 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/menu.css">
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html"><img src="./icons/chefs-hat.svg" class="main-icon">Grande</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./icons/chefs-hat.svg" class="main-icon">Grande</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="material-icons">menu</span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./menu.html"><img src="./icons/menu.svg" class="icons">Menus</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./events.html"><img src="./icons/event.svg" class="icons">Private Events</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./icons/services.svg" class="icons">
-            Services
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="./drinks.html"><img src="./icons/beverage.svg" class="icons">Beverages</a></li>
-            <li><a class="dropdown-item" href="./cakes.html"><img src="./icons/cake.svg" class="icons">Cake Orders</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="./delivery-items.html"><img src="./icons/delivery.svg" class="del-icon">Delivery</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./menu.html"><img src="./icons/menu.svg" class="icons">Menus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./events.html"><img src="./icons/event.svg" class="icons">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./drinks.html"><img src="./icons/beverage.svg" class="icons">Beverages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cakes.html"><img src="./icons/cake.svg" class="icons">Cake</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
           <a class="nav-link" href="./form/signin.html">Sign in</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline" type="submit"><img src="./icons/search.svg" class="search-icon"></button>
-      </form>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
-<!-- Navigation bar has ended -->
+  </nav>
+  <!-- Above is the navigation bar -->
 
-  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./js/main.js"></script>
-  </body>
-  </html>
+<section class="menu">
+  <!-- title -->
+  <div class="title">
+    <h2 class="heading2">Menu Items</h2>
+    <div class="underline"></div>
+  </div>
+  <!-- filter buttons -->
+  <div class="btn-container">
+  </div>
+  <!-- menu items -->
+  <div class="section-center">
+    <!-- single item -->
+    <article class="menu-item card">
+      <img src="./menu-item.jpeg" alt="menu item" class="photo card-img-top img-thumbnail shadow-drop-2-center" />
+      <div class="item-info card-body">
+        <header>
+          <h4>buttermilk pancakes</h4>
+          <h4 class="price">$15</h4>
+        </header>
+        <p class="item-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+          laboriosam excepturi! Quo, officia.
+        </p>
+      </div>
+    </article>
+    <!-- end of single item -->
+  </div>
+</section>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/cake-menu.js"></script>
+</body>
+</html>

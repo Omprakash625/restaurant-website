@@ -115,7 +115,7 @@ Menu
     color: ghostwhite;
     text-shadow: 1px 1px 8px rgb(17, 17, 124);
     border-radius: .7rem;
-    font-size: 4vw;
+    font-size: 1.5rem;
     width: 25vw;
     padding: .7rem .3rem;
     font-family:Satisfy, sans-serif;
@@ -166,26 +166,27 @@ Menu
 }
 .photo {
   object-fit: cover;
-  height: 200px;
+  height: 300px;
   /* border: 0.25rem solid var(--clr-gold); */
   border-radius: var(--radius);
 }
 .item-info {
-    padding: 0 5px;
+    padding: 10px 10px;
 }
+
 .item-info header {
   display: flex;
   font-family: Rampant One;
   text-transform: capitalize;
   justify-content: space-between;
-  border-bottom: 0.5px dotted var(--clr-grey-5);
+  border-bottom: 3px double var(--clr-grey-1);
 }
 .item-info h4 {
   margin-bottom: 0.5rem;
   display: flex;
 }
 .price {
-  color: var(--clr-gold);
+  color: var(--clr-grey-2);
 }
 .item-text {
   font-family: Zen Antique;
@@ -200,23 +201,37 @@ Menu
 form {
     margin-left: 5px;
 }
-
-@media screen and (min-width: 768px) {
+img {
+  object-fit: contain;
+}
+.logo-img {
+  height: 15vw;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
   .menu-item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
-    max-width: 40rem;
+    max-width: fit-content;
   }
   .photo {
     height: 175px;
   }
+  .filter-btn {
+    font-size: .9rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .item-info {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
   }
-  .photo {
-    height: 150px;
-  }
+  
 }
